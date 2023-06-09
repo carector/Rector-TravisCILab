@@ -1,4 +1,4 @@
-package src.main.java.com.rector;
+package com.rector;
 
 public interface CILabInterface {
 

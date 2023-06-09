@@ -1,3 +1,5 @@
+package com.rector;
+
 public class CILab implements CILabInterface {
     private String myString;
 
