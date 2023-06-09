@@ -1,3 +1,5 @@
+package com.rector;
+
 public interface CILabInterface {
 
     /**
