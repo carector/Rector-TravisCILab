@@ -40,23 +40,23 @@ public class CILabTest {
     public void testDetectCapitalUse4()
     {
         CILab l = new CILab();
-        l.setString("test with spaces");
-        assert l.detectCapitalUse();
+        l.setString("incorrectCaps");
+        assert !l.detectCapitalUse();
     }
 
     @Test
     public void testDetectCapitalUse5()
     {
         CILab l = new CILab();
-        l.setString("Another test with spaces");
-        assert l.detectCapitalUse();
+        l.setString("AnotherIncorrectCaps");
+        assert !l.detectCapitalUse();
     }
 
     @Test
     public void testDetectCapitalUse6()
     {
         CILab l = new CILab();
-        l.setString("ALL CAPS SPACES TEST... AND SOME CHARACTERS: *##)*@!");
-        assert l.detectCapitalUse();
+        l.setString("invalid space test");
+        assert !l.detectCapitalUse();
     }
 }

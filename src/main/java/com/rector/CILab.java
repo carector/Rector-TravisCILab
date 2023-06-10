@@ -37,7 +37,7 @@ public class CILab implements CILabInterface {
         if(!firstCharCapitalized && secondCharCapitalized) return false;
 
         for(int i = 2; i < myString.length(); i++)
-            if(Character.isUpperCase(myString.charAt(i)) != secondCharCapitalized)
+            if(Character.isUpperCase(myString.charAt(i)) != secondCharCapitalized || myString.charAt(i) == ' ')
                 return false;
 
         return true;
