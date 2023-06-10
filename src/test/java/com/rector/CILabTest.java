@@ -13,6 +13,22 @@ public class CILabTest {
     }
 
     @Test
+    public void testGetSetString2()
+    {
+        CILab l = new CILab();
+        l.setString("oisjdflasuehsar9w834h39j1e***");
+        assert l.getString().equals("oisjdflasuehsar9w834h39j1e***");
+    }
+
+    @Test
+    public void testGetSetString3()
+    {
+        CILab l = new CILab();
+        l.setString("String\nString");
+        assert !l.getString().equals("StringString");
+    }
+
+    @Test
     public void testDetectCapitalUse1()
     {
         CILab l = new CILab();
